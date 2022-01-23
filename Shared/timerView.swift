@@ -64,10 +64,12 @@ struct TimerButton: View {
                 self.actions[1]()
             }
             if self.duration > 0 {
-                let cbt = ChronologyTB(context: moc)
-                cbt.category = data[0]
-                cbt.label = data[1]
-                cbt.duration = duration
+                let ctb = ChronologyTB(context: moc)
+                ctb.category = data[0]
+                ctb.label = data[1]
+                ctb.duration = duration
+                ctb.dayOf = ChronologyDay(context: moc)
+                ctb.dayOf?.dayString = "2022.01.23"
                 try? moc.save()
             }
         }) {
