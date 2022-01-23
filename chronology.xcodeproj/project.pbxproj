@@ -37,6 +37,8 @@
 		7E63B2C5279CA2AC002D5B51 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2C3279CA2AC002D5B51 /* DataController.swift */; };
 		7E63B2C7279CB7B2002D5B51 /* chronologyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2C6279CB7B1002D5B51 /* chronologyHistoryView.swift */; };
 		7E63B2C8279CB7B2002D5B51 /* chronologyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2C6279CB7B1002D5B51 /* chronologyHistoryView.swift */; };
+		7E9423E5279DE98800D90AC5 /* ctbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9423E4279DE98800D90AC5 /* ctbView.swift */; };
+		7E9423E6279DE98800D90AC5 /* ctbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9423E4279DE98800D90AC5 /* ctbView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,7 @@
 		7E63B2BA279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChronologyTB+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7E63B2C3279CA2AC002D5B51 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7E63B2C6279CB7B1002D5B51 /* chronologyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronologyHistoryView.swift; sourceTree = "<group>"; };
+		7E9423E4279DE98800D90AC5 /* ctbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ctbView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,7 @@
 				7E5FFAD6279CBF6700253714 /* timerView.swift */,
 				7E5FFAD9279CC06800253714 /* timer.swift */,
 				7E5FFADC279CC63E00253714 /* timerCategories.swift */,
+				7E9423E4279DE98800D90AC5 /* ctbView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -344,6 +348,7 @@
 				7E63B2A1279C8E7D002D5B51 /* ContentView.swift in Sources */,
 				7E63B2BF279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift in Sources */,
 				7E5FFAD7279CBF6700253714 /* timerView.swift in Sources */,
+				7E9423E5279DE98800D90AC5 /* ctbView.swift in Sources */,
 				7E63B2C1279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift in Sources */,
 				7E63B2BB279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift in Sources */,
 				7E5FFADD279CC63E00253714 /* timerCategories.swift in Sources */,
@@ -363,6 +368,7 @@
 				7E63B2A2279C8E7D002D5B51 /* ContentView.swift in Sources */,
 				7E63B2C0279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift in Sources */,
 				7E5FFAD8279CBF6700253714 /* timerView.swift in Sources */,
+				7E9423E6279DE98800D90AC5 /* ctbView.swift in Sources */,
 				7E63B2C2279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift in Sources */,
 				7E63B2BC279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift in Sources */,
 				7E5FFADE279CC63E00253714 /* timerCategories.swift in Sources */,

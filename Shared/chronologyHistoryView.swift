@@ -15,22 +15,23 @@ struct chronologyHistoryView: View {
     var body: some View {
         List {
             ForEach(days, id: \.self) { day in
+                Text(day.wrapdDayString)
                 Section(day.wrapdDayString) {
                     ForEach(day.timeblockArray, id: \.self) { tb in
                         Text(tb.prettyString)
                     }
-                    .onDelete(perform: deleteCtb)
                 }
             }
+            .onDelete(perform: deleteDay)
         }
     }
 
-    func deleteCtb(at offsets: IndexSet) {
+    func deleteDay(at offsets: IndexSet) {
         for offset in offsets {
-            // find this timeblock in our fetch request
-            let ctb = days[offset]
+            // find this day in our fetch request
+            let day = days[offset]
            // delete it from the context
-            moc.delete(ctb)
+            moc.delete(day)
         }
         // save the context
         try? moc.save()

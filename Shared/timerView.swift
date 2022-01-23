@@ -69,7 +69,9 @@ struct TimerButton: View {
                 ctb.label = data[1]
                 ctb.duration = duration
                 ctb.dayOf = ChronologyDay(context: moc)
-                ctb.dayOf?.dayString = "2022.01.23"
+                let fancyday = DateFormatter()
+                fancyday.dateFormat = "yyyy.MM.dd"
+                ctb.dayOf?.dayString = fancyday.string(from: Date())
                 try? moc.save()
             }
         }) {

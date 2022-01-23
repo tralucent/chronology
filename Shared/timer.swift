@@ -5,23 +5,14 @@
 //  Created by Halcyone Rapp on 1/22/22.
 //
 
-//import CoreData
 import Foundation
 import SwiftUI
-//import SwiftUI
 
 class Timer: ObservableObject {
     
-    //@Environment(\.managedObjectContext) var moc
-    
     private var sourceTimer: DispatchSourceTimer?
     private let queue = DispatchQueue(label: "tracker.timer")
-    //@Published var counter: Int16 = 0
-    //@State var counter: Int16 = 0
-    //private var currentTB = ChronologyTB()
-    
-   // @Published var category = "category"
-    //*
+
     var counter: Int16 = 0 {
         didSet {
             DispatchQueue.main.async {
@@ -29,7 +20,6 @@ class Timer: ObservableObject {
             }
         }
     }
-    // */
     
     var timerString = "00:00:00" {
         didSet {
@@ -80,7 +70,6 @@ class Timer: ObservableObject {
 
     private func startTimer() {
         self.sourceTimer = DispatchSource.makeTimerSource(flags: DispatchSource.TimerFlags.strict, queue: self.queue)
-        //self.currentTB = ChronologyTB(context: moc)
         self.resumeTimer()
     }
     

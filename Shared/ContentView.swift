@@ -18,8 +18,7 @@ struct ContentView: View {
         VStack {
             timerView()
             chronologyHistoryView()
-            //Button("clear it all") {
-            //}
+            ctbView()
         }
     }
 }
