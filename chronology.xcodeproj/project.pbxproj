@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5FFAD7279CBF6700253714 /* timerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FFAD6279CBF6700253714 /* timerView.swift */; };
+		7E5FFAD8279CBF6700253714 /* timerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FFAD6279CBF6700253714 /* timerView.swift */; };
+		7E5FFADA279CC06800253714 /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FFAD9279CC06800253714 /* timer.swift */; };
+		7E5FFADB279CC06800253714 /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FFAD9279CC06800253714 /* timer.swift */; };
+		7E5FFADD279CC63E00253714 /* timerCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FFADC279CC63E00253714 /* timerCategories.swift */; };
+		7E5FFADE279CC63E00253714 /* timerCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FFADC279CC63E00253714 /* timerCategories.swift */; };
 		7E63B290279C8E7D002D5B51 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B28F279C8E7D002D5B51 /* Tests_iOS.swift */; };
 		7E63B292279C8E7D002D5B51 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B291279C8E7D002D5B51 /* Tests_iOSLaunchTests.swift */; };
 		7E63B29C279C8E7D002D5B51 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B29B279C8E7D002D5B51 /* Tests_macOS.swift */; };
@@ -17,6 +23,20 @@
 		7E63B2A2279C8E7D002D5B51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B278279C8E7A002D5B51 /* ContentView.swift */; };
 		7E63B2A3279C8E7D002D5B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E63B279279C8E7C002D5B51 /* Assets.xcassets */; };
 		7E63B2A4279C8E7D002D5B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E63B279279C8E7C002D5B51 /* Assets.xcassets */; };
+		7E63B2B5279C8EB0002D5B51 /* ChronologyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2B3279C8EB0002D5B51 /* ChronologyModel.xcdatamodeld */; };
+		7E63B2B6279C8EB0002D5B51 /* ChronologyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2B3279C8EB0002D5B51 /* ChronologyModel.xcdatamodeld */; };
+		7E63B2BB279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2B7279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift */; };
+		7E63B2BC279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2B7279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift */; };
+		7E63B2BD279C985F002D5B51 /* ChronologyDay+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2B8279C985F002D5B51 /* ChronologyDay+CoreDataProperties.swift */; };
+		7E63B2BE279C985F002D5B51 /* ChronologyDay+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2B8279C985F002D5B51 /* ChronologyDay+CoreDataProperties.swift */; };
+		7E63B2BF279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2B9279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift */; };
+		7E63B2C0279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2B9279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift */; };
+		7E63B2C1279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2BA279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift */; };
+		7E63B2C2279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2BA279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift */; };
+		7E63B2C4279CA2AC002D5B51 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2C3279CA2AC002D5B51 /* DataController.swift */; };
+		7E63B2C5279CA2AC002D5B51 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2C3279CA2AC002D5B51 /* DataController.swift */; };
+		7E63B2C7279CB7B2002D5B51 /* chronologyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2C6279CB7B1002D5B51 /* chronologyHistoryView.swift */; };
+		7E63B2C8279CB7B2002D5B51 /* chronologyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E63B2C6279CB7B1002D5B51 /* chronologyHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E5FFAD6279CBF6700253714 /* timerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerView.swift; sourceTree = "<group>"; };
+		7E5FFAD9279CC06800253714 /* timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
+		7E5FFADC279CC63E00253714 /* timerCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerCategories.swift; sourceTree = "<group>"; };
 		7E63B277279C8E7A002D5B51 /* chronologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronologyApp.swift; sourceTree = "<group>"; };
 		7E63B278279C8E7A002D5B51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E63B279279C8E7C002D5B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +72,13 @@
 		7E63B297279C8E7D002D5B51 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E63B29B279C8E7D002D5B51 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		7E63B29D279C8E7D002D5B51 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		7E63B2B4279C8EB0002D5B51 /* ChronologyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChronologyModel.xcdatamodel; sourceTree = "<group>"; };
+		7E63B2B7279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChronologyDay+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E63B2B8279C985F002D5B51 /* ChronologyDay+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChronologyDay+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E63B2B9279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChronologyTB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7E63B2BA279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChronologyTB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7E63B2C3279CA2AC002D5B51 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7E63B2C6279CB7B1002D5B51 /* chronologyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chronologyHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +127,19 @@
 		7E63B276279C8E7A002D5B51 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7E63B2B7279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift */,
+				7E63B2B8279C985F002D5B51 /* ChronologyDay+CoreDataProperties.swift */,
+				7E63B2B9279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift */,
+				7E63B2BA279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift */,
 				7E63B277279C8E7A002D5B51 /* chronologyApp.swift */,
 				7E63B278279C8E7A002D5B51 /* ContentView.swift */,
 				7E63B279279C8E7C002D5B51 /* Assets.xcassets */,
+				7E63B2B3279C8EB0002D5B51 /* ChronologyModel.xcdatamodeld */,
+				7E63B2C3279CA2AC002D5B51 /* DataController.swift */,
+				7E63B2C6279CB7B1002D5B51 /* chronologyHistoryView.swift */,
+				7E5FFAD6279CBF6700253714 /* timerView.swift */,
+				7E5FFAD9279CC06800253714 /* timer.swift */,
+				7E5FFADC279CC63E00253714 /* timerCategories.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -299,7 +339,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E63B2B5279C8EB0002D5B51 /* ChronologyModel.xcdatamodeld in Sources */,
+				7E63B2C7279CB7B2002D5B51 /* chronologyHistoryView.swift in Sources */,
 				7E63B2A1279C8E7D002D5B51 /* ContentView.swift in Sources */,
+				7E63B2BF279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift in Sources */,
+				7E5FFAD7279CBF6700253714 /* timerView.swift in Sources */,
+				7E63B2C1279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift in Sources */,
+				7E63B2BB279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift in Sources */,
+				7E5FFADD279CC63E00253714 /* timerCategories.swift in Sources */,
+				7E63B2C4279CA2AC002D5B51 /* DataController.swift in Sources */,
+				7E63B2BD279C985F002D5B51 /* ChronologyDay+CoreDataProperties.swift in Sources */,
+				7E5FFADA279CC06800253714 /* timer.swift in Sources */,
 				7E63B29F279C8E7D002D5B51 /* chronologyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +358,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E63B2B6279C8EB0002D5B51 /* ChronologyModel.xcdatamodeld in Sources */,
+				7E63B2C8279CB7B2002D5B51 /* chronologyHistoryView.swift in Sources */,
 				7E63B2A2279C8E7D002D5B51 /* ContentView.swift in Sources */,
+				7E63B2C0279C985F002D5B51 /* ChronologyTB+CoreDataClass.swift in Sources */,
+				7E5FFAD8279CBF6700253714 /* timerView.swift in Sources */,
+				7E63B2C2279C985F002D5B51 /* ChronologyTB+CoreDataProperties.swift in Sources */,
+				7E63B2BC279C985F002D5B51 /* ChronologyDay+CoreDataClass.swift in Sources */,
+				7E5FFADE279CC63E00253714 /* timerCategories.swift in Sources */,
+				7E63B2C5279CA2AC002D5B51 /* DataController.swift in Sources */,
+				7E63B2BE279C985F002D5B51 /* ChronologyDay+CoreDataProperties.swift in Sources */,
+				7E5FFADB279CC06800253714 /* timer.swift in Sources */,
 				7E63B2A0279C8E7D002D5B51 /* chronologyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,6 +763,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E63B2B3279C8EB0002D5B51 /* ChronologyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E63B2B4279C8EB0002D5B51 /* ChronologyModel.xcdatamodel */,
+			);
+			currentVersion = 7E63B2B4279C8EB0002D5B51 /* ChronologyModel.xcdatamodel */;
+			path = ChronologyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7E63B272279C8E79002D5B51 /* Project object */;
 }

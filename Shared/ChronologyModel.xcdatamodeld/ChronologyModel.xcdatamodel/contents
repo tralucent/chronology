@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ChronologyDay" representedClassName="ChronologyDay" syncable="YES">
+        <attribute name="day" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dayString" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <relationship name="timeblocks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChronologyTB" inverseName="dayOf" inverseEntity="ChronologyTB"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="dayString"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ChronologyTB" representedClassName="ChronologyTB" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="dayOf" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChronologyDay" inverseName="timeblocks" inverseEntity="ChronologyDay"/>
+    </entity>
+    <elements>
+        <element name="ChronologyDay" positionX="-54" positionY="18" width="128" height="104"/>
+        <element name="ChronologyTB" positionX="-63" positionY="-18" width="128" height="119"/>
+    </elements>
+</model>
