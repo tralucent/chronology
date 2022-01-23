@@ -12,12 +12,13 @@ struct timerView: View {
     
     @Environment(\.managedObjectContext) var moc
     @StateObject var timer = Timer()
-    
+
     @State private var category = ""
     @State private var label = ""
     
     private let categories = arrayOfCategories()
     private var buttonColors = [Color.purple, Color.indigo, Color.cyan, Color.indigo, Color.purple]
+    @State private var counter = 0
 
     var body: some View {
         VStack {

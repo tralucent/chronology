@@ -7,6 +7,7 @@
 
 //import CoreData
 import Foundation
+import SwiftUI
 //import SwiftUI
 
 class Timer: ObservableObject {
@@ -15,10 +16,20 @@ class Timer: ObservableObject {
     
     private var sourceTimer: DispatchSourceTimer?
     private let queue = DispatchQueue(label: "tracker.timer")
-    @Published var counter: Int16 = 0
+    //@Published var counter: Int16 = 0
+    //@State var counter: Int16 = 0
     //private var currentTB = ChronologyTB()
     
    // @Published var category = "category"
+    //*
+    var counter: Int16 = 0 {
+        didSet {
+            DispatchQueue.main.async {
+                self.update()
+            }
+        }
+    }
+    // */
     
     var timerString = "00:00:00" {
         didSet {
@@ -61,8 +72,6 @@ class Timer: ObservableObject {
             self.counter = 0
         }
         self.timerString = "00:00:00"
-        //try? moc.save()
-        //currentTB = ChronologyTB(context: moc)
     }
     
     func isPaused() -> Bool {

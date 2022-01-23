@@ -11,6 +11,8 @@ import SwiftUI
 struct ContentView: View {
     
     @Environment(\.managedObjectContext) var moc
+    @ObservedObject var timer = Timer()
+
     //@FetchRequest(sortDescriptors: []) var days: FetchedResults<ChronologyDay>
     
     var body: some View {
