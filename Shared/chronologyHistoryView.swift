@@ -19,9 +19,21 @@ struct chronologyHistoryView: View {
                     ForEach(day.timeblockArray, id: \.self) { tb in
                         Text(tb.prettyString)
                     }
+                    .onDelete(perform: deleteCtb)
                 }
             }
         }
+    }
+
+    func deleteCtb(at offsets: IndexSet) {
+        for offset in offsets {
+            // find this timeblock in our fetch request
+            let ctb = days[offset]
+           // delete it from the context
+            moc.delete(ctb)
+        }
+        // save the context
+        try? moc.save()
     }
 }
 
