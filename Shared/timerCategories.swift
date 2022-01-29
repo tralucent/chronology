@@ -13,7 +13,11 @@ enum categoryName: CaseIterable {
     case romantic
 }
 
-struct Categories: Identifiable, Hashable {
+struct Categories: Identifiable, Hashable, Comparable {
+    static func < (lhs: Categories, rhs: Categories) -> Bool {
+        return lhs.catName < rhs.catName
+    }
+    
     var id: UUID
     var catName: String
     
@@ -27,5 +31,5 @@ func arrayOfCategories() -> [Categories] {
         catList.append(Categories(id: UUID(), catName: "\(cat)"))
     }
 
-    return catList
+    return catList.sorted()
 }

@@ -11,15 +11,25 @@ struct ContentView: View {
     
     @Environment(\.managedObjectContext) var moc
     @ObservedObject var timer = Timer()
-
-    //@FetchRequest(sortDescriptors: []) var days: FetchedResults<ChronologyDay>
     
     var body: some View {
-        VStack {
-            timerView()
-            chronologyHistoryView()
-            ctbView()
+        NavigationView
+        {
+            VStack {
+                timerView()
+                //chronologyDaysView()
+                ctbView()
+            
+                NavigationLink() {
+                    chronologyDaysView()
+                } label: {
+                    VStack (alignment: .leading) {
+                        Text("history")
+                    }
+                }
+            }
         }
+        .navigationBarHidden(true)
     }
 }
 

@@ -40,11 +40,33 @@ extension ChronologyTB {
     }
     
     public var prettyString: String {
-        "\(wrapdCategory) : \(duration) : \(wrapdLabel)"
+        var min = duration/60
+        let sec = duration%60
+        let hours = min/60
+        let fancy: String
+        if (hours > 0) {
+            min = min%60
+            fancy = "\(hours):\(min):\(sec)"
+        } else {
+            if (min > 0) {
+                fancy = "\(min):\(sec)"
+            } else {
+                fancy = "\(sec) seconds"
+            }
+        }
+        return "\(wrapdCategory) : \(fancy) : \(wrapdLabel)"
     }
     
 }
 
 extension ChronologyTB : Identifiable {
 
+}
+
+extension ChronologyTB : Comparable {
+    public static func < (lhs: ChronologyTB, rhs: ChronologyTB) -> Bool {
+        return lhs.wrapdTimestamp < rhs.wrapdTimestamp
+    }
+    
+    
 }

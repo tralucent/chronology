@@ -16,8 +16,8 @@ struct ctbView: View {
 
     var body: some View {
         List {
-            ForEach(ctbs, id: \.self) { ctb in
-                        Text(ctb.prettyString)
+            ForEach(ctbs.sorted(by: >), id: \.self) { ctb in
+                Text(ctb.prettyString)
             }
             .onDelete(perform: deleteCtb)
         }
@@ -30,13 +30,7 @@ struct ctbView: View {
            // delete it from the context
             moc.delete(ctb)
         }
-        // save the context
+        // save the context (uncomment for release)
         try? moc.save()
-    }
-}
-
-struct ctbView_Previews: PreviewProvider {
-    static var previews: some View {
-        ctbView()
     }
 }

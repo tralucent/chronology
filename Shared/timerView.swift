@@ -16,7 +16,7 @@ struct timerView: View {
     @State private var category = ""
     @State private var label = ""
     
-    private let categories = arrayOfCategories()
+    private var categories = arrayOfCategories()
     private var buttonColors = [Color.purple, Color.indigo, Color.cyan, Color.indigo, Color.purple]
     @State private var counter = 0
 
@@ -27,6 +27,7 @@ struct timerView: View {
                     Text(selection.catName).tag(selection.catName)
                 }
             }
+            .onAppear( perform: {category = categories[0].catName} )
             .pickerStyle(.menu)
             TextField("Session label", text: $label)
             .frame(width: UIScreen.main.bounds.size.width-26, height: 40, alignment: .center)
@@ -68,6 +69,7 @@ struct TimerButton: View {
                 ctb.category = data[0]
                 ctb.label = data[1]
                 ctb.duration = duration
+                ctb.timestamp = Date()
                 ctb.dayOf = ChronologyDay(context: moc)
                 let fancyday = DateFormatter()
                 fancyday.dateFormat = "yyyy.MM.dd"
