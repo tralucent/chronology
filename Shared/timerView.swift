@@ -27,7 +27,7 @@ struct timerView: View {
                     Text(selection.catName).tag(selection.catName)
                 }
             }
-            .onAppear( perform: {category = categories[0].catName} )
+            .onAppear( perform: {category = (category == "") ? categories[0].catName : category} )
             .pickerStyle(.menu)
             TextField("Session label", text: $label)
             .frame(width: UIScreen.main.bounds.size.width-26, height: 40, alignment: .center)
@@ -44,7 +44,7 @@ struct timerView: View {
     }
 }
 
-
+/// constructs our buttons and handles the action
 struct TimerButton: View {
     @Environment(\.managedObjectContext) var moc
     
@@ -64,6 +64,7 @@ struct TimerButton: View {
             } else {
                 self.actions[1]()
             }
+            /// we have a new entry in our timeblocks
             if self.duration > 0 {
                 let ctb = ChronologyTB(context: moc)
                 ctb.category = data[0]
@@ -87,6 +88,7 @@ struct TimerButton: View {
                     .frame(width: buttonWidth, height: 50, alignment: .center)
             }
         }
+        /// gradients are fun!
         .background(LinearGradient(gradient: Gradient(colors: self.color), startPoint: .topLeading, endPoint: .bottom))
     }
 }

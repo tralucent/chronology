@@ -13,13 +13,15 @@ struct ContentView: View {
     @ObservedObject var timer = Timer()
     
     var body: some View {
+        /// NavigationView gives us the ability to drill down into more detailed Views and back out of them
         NavigationView
         {
             VStack {
+                /// timerView does the heavy lifting of our app
                 timerView()
                 //chronologyDaysView()
                 ctbView()
-            
+                /// NavigationLink to take us to the history of days
                 NavigationLink() {
                     chronologyDaysView()
                 } label: {
@@ -33,8 +35,11 @@ struct ContentView: View {
     }
 }
 
+/// coredata fucks with preview functionality
+/*
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+ */
