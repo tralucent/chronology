@@ -19,13 +19,15 @@ struct ctbView: View {
             ForEach(ctbs.sorted(by: >), id: \.self) { ctb in
                 Text(ctb.prettyString)
             }
-            .onDelete(perform: deleteCtb)
+            //.onDelete(perform: deleteCtb)
         }
     }
 
     func deleteCtb(at offsets: IndexSet) {
         for offset in offsets {
             // find this day in our fetch request
+            /// currently this deletes the wrong item due to the order reveral above
+            /// but you can delete elsewhere
             let ctb = ctbs[offset]
            // delete it from the context
             moc.delete(ctb)
